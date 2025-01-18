@@ -5,5 +5,7 @@ class EmailFilterCrew:
         print("EmailFilterCrew activated.")
         return self
 
-    def kickoff(self, inputs):
+    async def kickoff(self, inputs):
         print(f"Processing emails: {inputs['emails']}")
+        # Simulate some async processing
+        await asyncio.sleep(1)
